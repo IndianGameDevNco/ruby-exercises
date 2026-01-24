@@ -2,8 +2,5 @@
 
 inherit_from: ~/.rubocop.yml
 
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
-
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
