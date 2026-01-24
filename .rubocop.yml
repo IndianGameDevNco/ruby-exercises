@@ -1,9 +1,9 @@
-# This is .rubocop.yml in ~/
-AllCops:
-  NewCops: enable
+# This is .rubocop.yml in ~/project/
+
+inherit_from: ~/.rubocop.yml
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: never
+  EnforcedStyle: always
