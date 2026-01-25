@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "spec_helper"
 require_relative "../exercises/factorial"
 
@@ -12,7 +14,7 @@ RSpec.describe "Factorial" do
     end
 
     xit "returns 3628800 when passed the number 10" do
-      expect(factorial(10)).to eq(3628800)
+      expect(factorial(10)).to eq(3_628_800)
     end
 
     xit "returns 1 when passed the number 0" do

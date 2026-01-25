@@ -1,13 +1,15 @@
-require 'spec_helper'
-require_relative '../exercises/permutation_exercises'
+# frozen_string_literal: true
 
-RSpec.describe '#permutations' do
+require "spec_helper"
+require_relative "../exercises/permutation_exercises"
+
+RSpec.describe "#permutations" do
   it "returns 1 possible permutation for a set containing 0 numbers" do
     expect(permutations([])).to eq [[]]
   end
 
   xit "returns 2 possible permutations for a set containing 2 numbers" do
-    expect(permutations([1, 2])).to match_array([[2, 1], [1, 2]])
+    expect(permutations([1, 2])).to contain_exactly([2, 1], [1, 2])
   end
 
   xit "returns 6 possible permutations for a set containing 3 numbers" do

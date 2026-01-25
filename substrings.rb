@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def substrings(string, dictionary)
   result = Hash.new(0)
   words = string.downcase.scan(/\w+/)
@@ -12,5 +14,5 @@ def substrings(string, dictionary)
   result
 end
 
-puts substrings("below", ["below", "low", "bow", "el"])
-puts substrings("Howdy partner, sit down! How's it going?", ["down", "how", "it", "go"])
+puts substrings('below', %w[below low bow el])
+puts substrings("Howdy partner, sit down! How's it going?", %w[down how it go])

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "../exercises/contains_exercises"
 
 describe "#contains?" do

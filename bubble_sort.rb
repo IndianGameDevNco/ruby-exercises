@@ -1,6 +1,8 @@
-def bubble_sort(arr) 
+# frozen_string_literal: true
+
+def bubble_sort(arr)
   n = arr.length
-  arr.each_with_index do |i_value, i|
+  arr.each_with_index do |_i_value, i|
     arr.each_with_index do |j_value, j|
       arr[j], arr[j + 1] = arr[j + 1], arr[j] if j < n - i - 1 && j_value > arr[j + 1]
     end

@@ -4,3 +4,7 @@ inherit_from: ~/.rubocop.yml
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
+
+plugins:
+  - rubocop-rspec
+

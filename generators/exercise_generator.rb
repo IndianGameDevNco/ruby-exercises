@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "fileutils"
 
 class ExerciseGenerator
@@ -7,7 +9,7 @@ class ExerciseGenerator
     @exercise_name = exercise_name
   end
 
-  TEMPLATE_DIR_PATH = "generators/exercise_template".freeze
+  TEMPLATE_DIR_PATH = "generators/exercise_template"
 
   def generate
     unless Dir.exist?(exercise_group_path)
@@ -50,15 +52,15 @@ class ExerciseGenerator
   end
 
   def make_exercise_directory
-    FileUtils::mkdir_p(exercise_directory_path)
-    FileUtils::copy_entry(TEMPLATE_DIR_PATH, exercise_group_path)
+    FileUtils.mkdir_p(exercise_directory_path)
+    FileUtils.copy_entry(TEMPLATE_DIR_PATH, exercise_group_path)
   end
 
   def make_solutions_directory
     solutions_group_path = File.join("solutions", exercise_group_path)
     solutions_exercise_path = File.join("solutions", exercise_directory_path)
 
-    FileUtils::mkdir_p(solutions_exercise_path)
-    FileUtils::copy_entry(TEMPLATE_DIR_PATH, solutions_group_path)
+    FileUtils.mkdir_p(solutions_exercise_path)
+    FileUtils.copy_entry(TEMPLATE_DIR_PATH, solutions_group_path)
   end
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def nil_array(number)
   # return an array containing `nil` the given number of times
   Array.new(number)
@@ -20,7 +22,7 @@ end
 
 def add_element(array)
   # add an element (of any value) to the array
-  array << 'fa9la by Flipperachi'
+  array << "fa9la by Flipperachi"
 end
 
 def remove_last_element(array)
@@ -44,7 +46,7 @@ end
 
 def array_difference(original, comparison)
   # return an array of elements from the original array that are not in the comparison array
-  original - comparison 
+  original - comparison
 end
 
 def empty_array?(array)
