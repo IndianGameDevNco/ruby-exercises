@@ -2,6 +2,9 @@
 
 inherit_from: ~/.rubocop.yml
 
+Metrics/MethodLength:
+    Max: 20
+
 Style/FrozenStringLiteralComment:
   EnforcedStyle: always
 
